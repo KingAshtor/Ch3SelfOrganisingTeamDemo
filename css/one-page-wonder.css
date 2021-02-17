@@ -3,9 +3,17 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
+:root {
+  --background: rgb(255, 231, 249);
+  --primary: rgb(153, 108, 130);
+  --secondary: rgb(169, 145, 167);
+  --tertiary: rgb(31, 0, 16);
+}
 
 body {
   font-family: 'Lato';
+  color: var(--tertiary);
+  background-color: var(--background);
 }
 
 h1,
@@ -26,32 +34,13 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
-.bg-black {
-  background-color: #000 !important;
+.image {
+  border: 10px solid var(--tertiary);
+  background: radial-gradient(transparent, var(--tertiary));
 }
 
 .rounded-pill {
   border-radius: 5rem;
-}
-
-.navbar-custom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-custom .navbar-brand {
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  font-weight: 700;
-}
-
-.navbar-custom .navbar-nav .nav-item .nav-link {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
 }
 
 header.masthead {
@@ -59,11 +48,12 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, var(--background) 0%, var(--primary) 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  box-shadow: 0px 0px 15px rgba(31, 0, 16, 0.1);
 }
 
 header.masthead .masthead-content {
@@ -72,18 +62,22 @@ header.masthead .masthead-content {
 }
 
 header.masthead .masthead-content .masthead-heading {
-  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  font-size: 6rem !important;
 }
 
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 2rem;
+  color: var(--tertiary);
+  font-size: 3rem !important;
 }
 
 header.masthead .bg-circle {
+  filter: blur(10px);
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, var(--background) 0%, var(--primary) 100%);
 }
 
 header.masthead .bg-circle-1 {
@@ -94,17 +88,17 @@ header.masthead .bg-circle-1 {
 }
 
 header.masthead .bg-circle-2 {
-  height: 50rem;
-  width: 50rem;
-  top: -25rem;
-  right: -25rem;
+  height: 40rem;
+  width: 40rem;
+  top: -15rem;
+  right: -15rem;
 }
 
 header.masthead .bg-circle-3 {
-  height: 20rem;
-  width: 20rem;
+  height: 40rem;
+  width: 40rem;
   bottom: -10rem;
-  right: 5%;
+  right: 30%;
 }
 
 header.masthead .bg-circle-4 {
@@ -112,6 +106,13 @@ header.masthead .bg-circle-4 {
   width: 30rem;
   top: -5rem;
   right: 35%;
+}
+
+header.masthead .bg-circle-5 {
+  height: 35rem;
+  width: 35rem;
+  bottom: -50%;
+  right: -50%;
 }
 
 @media (min-width: 992px) {
@@ -128,33 +129,31 @@ header.masthead .bg-circle-4 {
 }
 
 .bg-primary {
-  background-color: #ee0979 !important;
+  background-color: var(--background) !important;
 }
 
 .btn-primary {
-  background-color: #ee0979;
-  border-color: #ee0979;
+  color: var(--background) !important;
+  background-color: var(--primary) !important;
+  border: 0.2rem solid var(--tertiary) !important;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #bd0760 !important;
-  border-color: #bd0760 !important;
+  background-color: var(--secondary) !important;
+  border-color: var(--tertiary) !important;
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  box-shadow: 0 0 0 0.2rem var(--tertiary) !important;
 }
 
-.btn-secondary {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
+footer {
+  background: linear-gradient(180deg, var(--background) 0%, var(--secondary) 100%);
 }
 
-.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #cc5500 !important;
-  border-color: #cc5500 !important;
-}
-
-.btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+section {
+  border-radius: 10px;
+  margin: 30px;
+  background: linear-gradient(180deg, rgba(153, 108, 130, 0.1) 0%, rgba(169, 145, 167, 0.1) 100%);
+  box-shadow: 0px 0px 10px rgba(31, 0, 16, 0.1);
 }
