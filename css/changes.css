@@ -5,6 +5,10 @@
     --tertiary: rgb(31, 0, 16);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--tertiary);
     background-color: var(--background);
