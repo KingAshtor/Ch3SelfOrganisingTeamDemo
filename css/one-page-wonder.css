@@ -3,7 +3,11 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
+<<<<<<< Updated upstream
 :root {
+=======
+ :root {
+>>>>>>> Stashed changes
   --background: rgb(255, 231, 249);
   --primary: rgb(153, 108, 130);
   --secondary: rgb(169, 145, 167);
@@ -34,11 +38,14 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
+<<<<<<< Updated upstream
 .image {
   border: 10px solid var(--tertiary);
   background: radial-gradient(transparent, var(--tertiary));
 }
 
+=======
+>>>>>>> Stashed changes
 .rounded-pill {
   border-radius: 5rem;
 }
@@ -64,12 +71,20 @@ header.masthead .masthead-content {
 header.masthead .masthead-content .masthead-heading {
   text-transform: uppercase;
   color: var(--tertiary);
+<<<<<<< Updated upstream
   font-size: 6rem !important;
+=======
+  font-size: 100% !important;
+>>>>>>> Stashed changes
 }
 
 header.masthead .masthead-content .masthead-subheading {
   color: var(--tertiary);
+<<<<<<< Updated upstream
   font-size: 3rem !important;
+=======
+  font-size: 100% !important;
+>>>>>>> Stashed changes
 }
 
 header.masthead .bg-circle {
@@ -120,11 +135,16 @@ header.masthead .bg-circle-5 {
     padding-top: calc(10rem + 55px);
     padding-bottom: 10rem;
   }
+
   header.masthead .masthead-content .masthead-heading {
-    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    font-size: 300% !important;
   }
+  
   header.masthead .masthead-content .masthead-subheading {
-    font-size: 4rem;
+    color: var(--tertiary);
+    font-size: 300% !important;
   }
 }
 
